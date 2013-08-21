@@ -4,12 +4,12 @@ $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 
 Gem::Specification.new do |spec|
   spec.name          = "nprogress-rails"
-  spec.version       = "0.1.1.1"
+  spec.version       = "0.1.1.2"
   spec.authors       = ["Carlos Alexandro Becker"]
   spec.email         = ["caarlos0@gmail.com"]
   spec.description   = %q{This is a gem for the rstacruz' nprogress implementation. It's based on version nprogress 0.1.1.}
   spec.summary       = %q{Slim progress bars for Ajax'y applications. Inspired by Google, YouTube, and Medium.}
-  spec.homepage      = "https://github.com/caarlos0/nprogress_rails"
+  spec.homepage      = "https://github.com/caarlos0/nprogress-rails"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files`.split($/)
