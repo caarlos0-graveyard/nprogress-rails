@@ -4,11 +4,6 @@
   -webkit-pointer-events: none;
 }
 
-/* Make the entire page show a busy cursor */
-.nprogress-busy body {
-  cursor: wait;
-}
-
 #nprogress .bar {
   background: #29d;
 
