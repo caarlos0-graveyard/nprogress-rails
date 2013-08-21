@@ -36,7 +36,8 @@ In your `application.js.coffee` (or just JS):
 #= require nprogress-turbolinks
 ```
 
-The `nprogress-turbolinks` is required only if you use turbolinks. Otherwise,
+The `nprogress-turbolinks` is required only if you use turbolinks. Using pjax
+rather than turbolinks? Simply require `nprogress-pjax` instead. Otherwise,
 you will have to deal with show/hide the progress by your own.
 
 Also, into your `application.css.scss` file:
