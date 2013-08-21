@@ -1,4 +1,4 @@
-# nprogress_rails
+# nprogress-rails
 
 This is basically a ruby gem for asset pipeline which includes the version
 0.1.0 of the awesome rstacruz' [nprogress](https://github.com/rstacruz/nprogress)
@@ -8,7 +8,7 @@ library.
 
 Add this line to your application's Gemfile:
 
-    gem 'nprogress_rails'
+    gem 'nprogress-rails'
 
 And then execute:
 
@@ -16,7 +16,7 @@ And then execute:
 
 Or install it yourself as:
 
-    $ gem install nprogress_rails
+    $ gem install nprogress-rails
 
 ## Usage
 
@@ -26,20 +26,20 @@ In your `application.js.coffee` (or just JS):
 
 ```coffeescript
 #= require nprogress
-#= require nprogress_turbolinks
+#= require nprogress-turbolinks
 ```
 
-The `nprogress_turbolinks` is required only if you use turbolinks. Otherwise,
+The `nprogress-turbolinks` is required only if you use turbolinks. Otherwise,
 you will have to deal with show/hide the progress by your own.
 
 Also, into your `application.css.scss` file:
 
 ```scss
 *= require nprogress
-*= require nprogress_bootstrap
+*= require nprogress-bootstrap
 ```
 
-The `nprogress_bootstrap` is required if you use bootstrap and have a fixed
+The `nprogress-bootstrap` is required if you use bootstrap and have a fixed
 toolbar or anything else. tl;dr: if the console shows no erros, but the
 progress doesn't appear, try this.
 
