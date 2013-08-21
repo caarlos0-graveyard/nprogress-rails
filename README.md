@@ -51,6 +51,27 @@ The `nprogress-bootstrap` is required if you use bootstrap and have a fixed
 toolbar or anything else. tl;dr: if the console shows no erros, but the
 progress doesn't appear, try this.
 
+## Customization
+
+You can use any of the configurations described in the [readme](https://github.com/rstacruz/nprogress#configuration)
+with this lib. I just recommend you to do so ASAP, for example, just after
+the `nprogress-rails` require:
+
+```coffeescript
+# this is the application.js.coffee file:
+
+#= require jquery
+#= require jquery_ujs
+#= require turbolinks
+#= require nprogress
+#= require nprogress-turbolinks
+
+NProgress.configure
+  showSpinner: false
+  ease: 'ease'
+  speed: 500 
+```
+
 
 ## Contributing
 
