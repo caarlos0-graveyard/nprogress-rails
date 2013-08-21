@@ -3,8 +3,8 @@
 
 ;(function(factory) {
 
-  if (typeof module === 'object') {
-    module.exports = factory(this.jQuery || require('dom'));
+  if (typeof module === 'function') {
+    module.exports = factory(this.jQuery || require('jquery'));
   } else {
     this.NProgress = factory(this.jQuery);
   }
@@ -12,7 +12,7 @@
 })(function($) {
   var NProgress = {};
 
-  NProgress.version = '0.1.1';
+  NProgress.version = '0.1.2';
 
   var Settings = NProgress.settings = {
     minimum: 0.08,
