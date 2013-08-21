@@ -1,8 +1,15 @@
 # nprogress_rails
 
 This is basically a ruby gem for asset pipeline which includes the version
-0.1.0 of the awesome rstacruz' [nprogress](https://github.com/rstacruz/nprogress)
-library.
+0.1.0 of the awesome [rstacruz][rstacruz]' [nprogress][lib] library.
+
+- [**Original lib**][lib]
+- [**Demo**][demo]
+
+
+[rstacruz]: https://github.com/rstacruz
+[lib]: https://github.com/rstacruz/nprogress
+[demo]: http://ricostacruz.com/nprogress/
 
 ## Installation
 
