@@ -12,7 +12,7 @@
 })(function($) {
   var NProgress = {};
 
-  NProgress.version = '0.1.0';
+  NProgress.version = '0.1.1';
 
   var Settings = NProgress.settings = {
     minimum: 0.08,
@@ -23,7 +23,7 @@
     trickleRate: 0.02,
     trickleSpeed: 800,
     showSpinner: true,
-    template: '<div class="bar" role="bar"><div class="peg"></div></div><div class="spinner"><div class="spinner-icon"></div></div>'
+    template: '<div class="bar" role="bar"><div class="peg"></div></div><div class="spinner" role="spinner"><div class="spinner-icon"></div></div>'
   };
 
   /**
@@ -66,7 +66,7 @@
 
     $progress.queue(function(next) {
       // Set positionUsing if it hasn't already been set
-      if (Settings.positionUsing == '') Settings.positionUsing = NProgress.getPositioningCSS();
+      if (Settings.positionUsing === '') Settings.positionUsing = NProgress.getPositioningCSS();
       
       // Add transition
       $bar.css(barPositionCSS(n, speed, ease));
@@ -178,7 +178,8 @@
       transform: 'translate3d('+perc+'%,0,0)'
     });
 
-    if(!Settings.showSpinner) $el.find('.spinner').hide();
+    if (!Settings.showSpinner)
+      $el.find('[role="spinner"]').remove();
 
     $el.appendTo(document.body);
 
@@ -205,6 +206,7 @@
   /**
    * Determine which positioning CSS rule to use.
    */
+
   NProgress.getPositioningCSS = function() {
     // Sniff on document.body.style
     var bodyStyle = document.body.style;
@@ -225,7 +227,7 @@
       // Browsers without translate() support, e.g. IE7-8
       return 'margin';
     }
-  }
+  };
 
   /**
    * Helpers
@@ -255,9 +257,9 @@
   function barPositionCSS(n, speed, ease) {
     var barCSS;
 
-    if (Settings.positionUsing == 'translate3d') {
+    if (Settings.positionUsing === 'translate3d') {
       barCSS = { transform: 'translate3d('+toBarPerc(n)+'%,0,0)' };
-    } else if (Settings.positionUsing == 'translate') {
+    } else if (Settings.positionUsing === 'translate') {
       barCSS = { transform: 'translate('+toBarPerc(n)+'%,0)' };
     } else {
       barCSS = { 'margin-left': toBarPerc(n)+'%' };
