@@ -1,4 +1,4 @@
 $(function() {
-  $(document).on('ajaxStart',    function() { NProgress.start(); });
-  $(document).on('ajaxComplete', function() { NProgress.done();  });
+  $(document).on('ajaxStart', function() { NProgress.start(); });
+  $(document).on('ajaxStop',  function() { NProgress.done();  });
 });
