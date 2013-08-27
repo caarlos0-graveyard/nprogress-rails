@@ -1,7 +1,7 @@
 # nprogress-rails
 
 This is basically a ruby gem for asset pipeline which includes the version
-0.1.0 of the awesome [rstacruz][rstacruz]' [nprogress][lib] library.
+0.1.2 of the awesome [rstacruz][rstacruz]' [nprogress][lib] library.
 
 - [**Original lib**][lib]
 - [**Demo**][demo]
