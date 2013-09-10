@@ -44,8 +44,9 @@ you will have to deal with show/hide the progress by your own.
 Also, into your `application.css.scss` file:
 
 ```scss
-*= require nprogress
-*= require nprogress-bootstrap
+$nprogress-color: #f1f1f1; // if you want to change the color
+@import 'nprogress';
+@import 'nprogress-bootstrap';
 ```
 
 The `nprogress-bootstrap` is required if you use bootstrap and have a fixed
