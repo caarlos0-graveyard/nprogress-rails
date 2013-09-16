@@ -44,9 +44,8 @@ you will have to deal with show/hide the progress by your own.
 Also, into your `application.css.scss` file:
 
 ```scss
-$nprogress-color: #f1f1f1; // if you want to change the color
-@import 'nprogress';
-@import 'nprogress-bootstrap';
+*= require nprogress
+*= require nprogress-bootstrap
 ```
 
 The `nprogress-bootstrap` is required if you use bootstrap and have a fixed
@@ -74,6 +73,14 @@ NProgress.configure
   speed: 500
 ```
 
+Since the [v0.1.2.3 release](https://github.com/caarlos0/nprogress-rails/releases/tag/v0.1.2.3),
+you can also change the color of the progressbar using SASS:
+
+```scss
+$nprogress-color: #f1f1f1;
+@import 'nprogress';
+@import 'nprogress-bootstrap';
+```
 
 ## Contributing
 
