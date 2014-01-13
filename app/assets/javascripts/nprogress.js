@@ -81,7 +81,7 @@
           setTimeout(function() {
             NProgress.remove();
             next();
-          }, speed);
+          }, 0);
         }, speed);
       } else {
         setTimeout(next, speed);
