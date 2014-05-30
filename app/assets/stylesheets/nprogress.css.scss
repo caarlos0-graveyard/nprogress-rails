@@ -1,4 +1,5 @@
 $nprogress-color: #29d !default;
+$nprogress-zindex: 100 !default;
 
 /* Make clicks pass-through */
 #nprogress {
@@ -9,7 +10,7 @@ $nprogress-color: #29d !default;
   background: $nprogress-color;
 
   position: fixed;
-  z-index: 100;
+  z-index: $nprogress-zindex;
   top: 0;
   left: 0;
 
@@ -36,7 +37,7 @@ $nprogress-color: #29d !default;
 #nprogress .spinner {
   display: block;
   position: fixed;
-  z-index: 100;
+  z-index: $nprogress-zindex;
   top: 15px;
   right: 15px;
 }
