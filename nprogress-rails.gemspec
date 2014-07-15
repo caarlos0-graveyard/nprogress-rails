@@ -7,7 +7,7 @@ Gem::Specification.new do |spec|
   spec.version       = '0.1.3.1'
   spec.authors       = ['Carlos Alexandro Becker']
   spec.email         = ['caarlos0@gmail.com']
-  spec.description   = %q{This is a gem for the rstacruz' nprogress implementation. It's based on version nprogress 0.1.2.}
+  spec.description   = %q{This is a gem for the rstacruz' nprogress implementation. It's based on version nprogress 0.1.6.}
   spec.summary       = %q{Slim progress bars for Ajax'y applications. Inspired by Google, YouTube, and Medium.}
   spec.homepage      = 'https://github.com/caarlos0/nprogress-rails'
   spec.license       = 'MIT'
