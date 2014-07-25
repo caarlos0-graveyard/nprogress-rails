@@ -20,6 +20,8 @@
     minimum: 0.08,
     easing: 'ease',
     positionUsing: '',
+    barHeight: '2px',
+    barColor: '#29d',
     speed: 200,
     trickle: true,
     trickleRate: 0.02,
@@ -231,6 +233,8 @@
         spinner;
     
     css(bar, {
+      height: Settings.barHeight,
+      'background-color': Settings.barColor,
       transition: 'all 0 linear',
       transform: 'translate3d(' + perc + '%,0,0)'
     });
