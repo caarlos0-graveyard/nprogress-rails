@@ -1,4 +1,4 @@
-# nprogress-rails
+# nprogress-rails [![Gem Version](https://badge.fury.io/rb/nprogress-rails.svg)](http://badge.fury.io/rb/nprogress-rails)
 
 This is basically a ruby gem for asset pipeline which includes the version
 0.1.6 of the awesome [rstacruz][rstacruz]' [nprogress][lib] library.
