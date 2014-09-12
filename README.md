@@ -27,13 +27,11 @@ Or install it yourself as:
 
 ## Usage
 
-You basically have to add the requires.
+You basically have to add the requires to the `application.js` file:
 
-In your `application.js.coffee` (or just JS):
-
-```coffeescript
-#= require nprogress
-#= require nprogress-turbolinks
+```javascript
+//= require nprogress
+//= require nprogress-turbolinks
 ```
 
 The `nprogress-turbolinks` is required only if you use turbolinks. Using pjax
@@ -54,10 +52,10 @@ progress doesn't appear, try this.
 
 ### Angular.js support [experimental]
 
-You can try the Angular.js support with this:
+You can try the Angular.js support with something like this (again,
+in `application.js` file):
 
 ```javascript
-// ...
 //= require nprogress
 //= require nprogress-angular
 
@@ -78,19 +76,14 @@ You can use any of the configurations described in the [readme](https://github.c
 with this lib. I just recommend you to do so ASAP, for example, just after
 the `nprogress-rails` require:
 
-```coffeescript
-# this is the application.js.coffee file:
+```javascript
+//= require nprogress
 
-#= require jquery
-#= require jquery_ujs
-#= require turbolinks
-#= require nprogress
-#= require nprogress-turbolinks
-
-NProgress.configure
-  showSpinner: false
-  ease: 'ease'
+NProgress.configure({
+  showSpinner: false,
+  ease: 'ease',
   speed: 500
+});
 ```
 
 Since the [v0.1.2.3 release](https://github.com/caarlos0/nprogress-rails/releases/tag/v0.1.2.3),
