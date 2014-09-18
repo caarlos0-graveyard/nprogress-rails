@@ -1,4 +1,5 @@
 $nprogress-color: #29d !default;
+$nprogress-height: 2px !default;
 $nprogress-zindex: 100 !default;
 
 /* Make clicks pass-through */
@@ -15,7 +16,7 @@ $nprogress-zindex: 100 !default;
   left: 0;
 
   width: 100%;
-  height: 2px;
+  height: $nprogress-height;
 }
 
 /* Fancy blur effect */
