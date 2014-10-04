@@ -4,7 +4,7 @@ $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 
 Gem::Specification.new do |spec|
   spec.name          = 'nprogress-rails'
-  spec.version       = '0.1.6.2'
+  spec.version       = '0.1.6.3'
   spec.authors       = ['Carlos Alexandro Becker']
   spec.email         = ['caarlos0@gmail.com']
   spec.description   = %q{This is a gem for the rstacruz' nprogress implementation. It's based on version nprogress 0.1.6.}
