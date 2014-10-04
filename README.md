@@ -85,6 +85,9 @@ you can also change the color of the progressbar using SASS:
 
 ```scss
 $nprogress-color: #f1f1f1;
+$nprogress-height: 10px;
+$nprogress-zindex: 10100;
+
 @import 'nprogress';
 @import 'nprogress-bootstrap';
 ```
