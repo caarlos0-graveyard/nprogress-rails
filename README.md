@@ -50,7 +50,7 @@ The `nprogress-bootstrap` is required if you use bootstrap and have a fixed
 toolbar or anything else. tl;dr: if the console shows no errors, but the
 progress doesn't appear, try this.
 
-### Angular.js support [experimental]
+### Angular.js support
 
 You can try the Angular.js support with something like this (again,
 in `application.js` file):
@@ -59,13 +59,7 @@ in `application.js` file):
 //= require nprogress
 //= require nprogress-angular
 
-var app = angular.module('myApp',[]).config([
-  '$httpProvider',
-  function($httpProvider) {
-    $httpProvider.interceptors.push(nprogressAngularInterceptor);
-    nprogressAngularInterceptor = undefined;
-  }
-]);
+angular.module('myApp', [ 'nprogress-rails' ]);
 ```
 
 This should make all requests made with `$http` show/hide the NProgress bar.
