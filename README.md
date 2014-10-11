@@ -1,5 +1,4 @@
-[![Stories in Ready](https://badge.waffle.io/caarlos0/nprogress-rails.png?label=ready&title=Ready)](https://waffle.io/caarlos0/nprogress-rails)
-# nprogress-rails [![Gem Version](https://badge.fury.io/rb/nprogress-rails.svg)](http://badge.fury.io/rb/nprogress-rails)
+# nprogress-rails [![Gem Version](https://badge.fury.io/rb/nprogress-rails.svg)](http://badge.fury.io/rb/nprogress-rails) [![Dependency Status](https://gemnasium.com/caarlos0/nprogress-rails.svg)](https://gemnasium.com/caarlos0/nprogress-rails)  [![Stories in Ready](https://badge.waffle.io/caarlos0/nprogress-rails.png?label=ready&title=Ready)](https://waffle.io/caarlos0/nprogress-rails) 
 
 This is basically a ruby gem for asset pipeline which includes the version
 0.1.6 of the awesome [rstacruz][rstacruz]' [nprogress][lib] library.
