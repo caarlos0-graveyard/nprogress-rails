@@ -1,3 +1,4 @@
+[![Stories in Ready](https://badge.waffle.io/caarlos0/nprogress-rails.png?label=ready&title=Ready)](https://waffle.io/caarlos0/nprogress-rails)
 # nprogress-rails [![Gem Version](https://badge.fury.io/rb/nprogress-rails.svg)](http://badge.fury.io/rb/nprogress-rails)
 
 This is basically a ruby gem for asset pipeline which includes the version
