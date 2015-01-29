@@ -92,6 +92,16 @@ $nprogress-zindex: 10100;
 @import 'nprogress-bootstrap';
 ```
 
+## Ajax - jQuery or Prototype
+`nprogress-ajax` automatically triggers the NProgress bar when an Ajax
+request is started (the 'ajaxStart' event), and finishes it when the Ajax
+request completes (the 'ajaxStop' event). This works for any Ajax events
+triggered using jQuery.
+
+If you're using Prototype, you can include the `nprogress-ajax-prototype`
+javascript file instead, which works for Ajax requests started from Prototype
+(the 'onCreate' and 'onComplete' events, to be exact).
+
 ## Contributing
 
 1. Fork it
