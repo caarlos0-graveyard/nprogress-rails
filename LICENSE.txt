@@ -1,4 +1,4 @@
-Copyright (c) 2013 Carlos Alexandro Becker
+Copyright (c) 2013-2016 Carlos Alexandro Becker
 
 MIT License
 
