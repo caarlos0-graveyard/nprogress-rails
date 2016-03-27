@@ -1,7 +1,6 @@
 jQuery(function() {
-  if (Turbolinks.ProgressBar) { Turbolinks.ProgressBar.disable(); }
-  jQuery(document).on('page:fetch',   function() { NProgress.start();  });
-  jQuery(document).on('page:receive', function() { NProgress.set(0.7); });
-  jQuery(document).on('page:change',  function() { NProgress.done();   });
-  jQuery(document).on('page:restore', function() { NProgress.remove(); });
+  jQuery(document).on('turbolinks:visit',         function() { NProgress.start();  });
+  jQuery(document).on('turbolinks:request-start', function() { NProgress.set(0.7); });
+  jQuery(document).on('turbolinks:request-end',   function() { NProgress.done();   });
+  jQuery(document).on('turbolinks:load',          function() { NProgress.remove(); });
 });
