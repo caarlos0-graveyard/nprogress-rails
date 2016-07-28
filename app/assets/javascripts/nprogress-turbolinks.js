@@ -1,7 +1,15 @@
 jQuery(function() {
   if (Turbolinks.ProgressBar) { Turbolinks.ProgressBar.disable(); }
-  jQuery(document).on('page:fetch',   function() { NProgress.start();  });
-  jQuery(document).on('page:receive', function() { NProgress.set(0.7); });
-  jQuery(document).on('page:change',  function() { NProgress.done();   });
-  jQuery(document).on('page:restore', function() { NProgress.remove(); });
+  jQuery(document).on('page:fetch turbolinks:request-start', function() {
+    NProgress.start();
+  });
+  jQuery(document).on('page:receive turbolinks:request-end', function() {
+    NProgress.set(0.7);
+  });
+  jQuery(document).on('page:change turbolinks:load', function() {
+    NProgress.done();
+  });
+  jQuery(document).on('page:restore turbolinks:request-end turbolinks:before-cache', function() {
+    NProgress.remove();
+  });
 });
