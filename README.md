@@ -44,11 +44,15 @@ Also, into your `application.css.scss` file:
 ```scss
 *= require nprogress
 *= require nprogress-bootstrap
+*= require nprogress-turbolinks5
 ```
 
 The `nprogress-bootstrap` is required if you use bootstrap and have a fixed
 toolbar or anything else. tl;dr: if the console shows no errors, but the
 progress doesn't appear, try this.
+
+The `nprogress-turbolinks5` is required if you use turbolinks 5 and does not
+want the default turbolinks progress to show up.
 
 ### Angular.js support
 
