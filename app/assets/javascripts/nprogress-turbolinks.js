@@ -1,5 +1,4 @@
 jQuery(function() {
-  if (Turbolinks.ProgressBar) { Turbolinks.ProgressBar.disable(); }
   jQuery(document).on('page:fetch turbolinks:request-start', function() {
     NProgress.start();
   });
